@@ -1,0 +1,32 @@
+[FORMAT]
+# black formats to 88.
+max-line-length=88
+
+# [Google Python Style Guide] Allow imports to be "long lines"
+ignore-long-lines=(^\s*(# )?<?https?://\S+>?$)|(^import\s\S)|(^from\s\S+\simport\s\S)
+
+[MESSAGES CONTROL]
+disable=
+    # flake8 w/ pep8-naming plugin catches these better
+    invalid-name,
+    # covered better by mypy, false positives, see https://github.com/PyCQA/pylint/issues/2258
+    no-name-in-module,
+    no-member,
+    # things black does, acceptable
+    bad-continuation,
+    # magic project providing mostly magic methods
+    too-few-public-methods,
+
+[BASIC]
+good-names=
+    # Exception handling
+    e,
+    # Ignored values
+    _,
+
+[MISCELLANEOUS]
+
+# Allow FIXME for long-term, but TODO/XXX can be used as reminders during development
+notes=
+    TODO,
+    XXX,
