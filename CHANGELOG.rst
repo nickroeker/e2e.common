@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.1.2 (unreleased)
+0.1.2 (2020-07-22)
 ------------------
 
 - Better PyPI rendering
