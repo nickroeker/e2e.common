@@ -1,5 +1,4 @@
 PYTHON=python3
-DIR=$(shell pwd)
 SRC=./e2e/common/
 TEST_SRC=./tests/
 
