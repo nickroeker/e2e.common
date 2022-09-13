@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.1.4 (unreleased)
+0.1.4 (2022-09-12)
 ------------------
 
 - [Issue 1] Respect parent overrides in functions
