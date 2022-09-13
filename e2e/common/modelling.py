@@ -50,7 +50,11 @@ def stitch_parent(func: Callable[..., T]) -> Callable[..., T]:
     @functools.wraps(func)
     def wrapper(self: "NamedParentable", *args: Any, **kwargs: Any) -> T:
         ret = func(self, *args, **kwargs)
-        if ret != self and isinstance(ret, NamedParentable):
+        if (
+            ret != self
+            and isinstance(ret, NamedParentable)
+            and not getattr(ret, "parent", None)
+        ):
             ret.parent = self
         return ret
 

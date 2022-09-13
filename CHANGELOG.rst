@@ -4,7 +4,7 @@ Changelog
 0.1.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- [Issue 1] Respect parent overrides in functions
 
 
 0.1.3 (2020-10-16)
